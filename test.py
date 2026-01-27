@@ -4,3 +4,5 @@ print(num,"this is test1.py")
 import test2
 print(num,"this is test1.py")
 print("Hello")
+print("World")
+print(1+2)
