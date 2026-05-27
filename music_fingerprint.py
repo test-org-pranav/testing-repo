@@ -9,13 +9,13 @@ Prerequisites on Ubuntu:
 * FuzzyWuzzy `pip install fuzzywuzzy[speedup]`
 """
 
-import acoustid
-import sys
-import os
-import chromaprint
-import numpy as np
-import matplotlib.pyplot as plt
-from fuzzywuzzy import fuzz
+# import acoustid
+# import sys
+# import os
+# import chromaprint
+# import numpy as np
+# import matplotlib.pyplot as plt
+# from fuzzywuzzy import fuzz
 
 DIR_DATABASE = 'music/full'
 DIR_SAMPLES = 'music/partial'
