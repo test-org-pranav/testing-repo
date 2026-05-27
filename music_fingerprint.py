@@ -62,23 +62,23 @@ def get_fingerprint_bitmap(fp):
 if __name__ == '__main__':
     
     # load database and samples
-    database = build_fingerprint_database(DIR_DATABASE)
-    samples = build_fingerprint_database(DIR_SAMPLES)
-    print('\n')
+    # database = build_fingerprint_database(DIR_DATABASE)
+    # samples = build_fingerprint_database(DIR_SAMPLES)
+    # print('\n')
 
-    # find best match of each samples in database
-    for sample, sample_fp in samples.iteritems():
-        print('Similarity score of "{}":'.format(sample))
-        best_match = None
-        for name, fp in database.iteritems():
-            similarity = fuzz.ratio(sample_fp, fp)
-            if not best_match or best_match['score'] < similarity:
-                best_match = {
-                    'score': similarity,
-                    'name': name
-                }
-            print('{} {}%'.format(name, similarity))
-        print('Best match: {name} ({score}%)\n'.format(**best_match))
+    # # find best match of each samples in database
+    # for sample, sample_fp in samples.iteritems():
+    #     print('Similarity score of "{}":'.format(sample))
+    #     best_match = None
+    #     for name, fp in database.iteritems():
+    #         similarity = fuzz.ratio(sample_fp, fp)
+    #         if not best_match or best_match['score'] < similarity:
+    #             best_match = {
+    #                 'score': similarity,
+    #                 'name': name
+    #             }
+    #         print('{} {}%'.format(name, similarity))
+    #     print('Best match: {name} ({score}%)\n'.format(**best_match))
 
-    # plot database
-    plot_fingerprints(database)
+    # # plot database
+    # plot_fingerprints(database)
