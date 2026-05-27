@@ -4,5 +4,3 @@ print(num,"this is test1.py")
 import iterate_files
 print(num,"this is test1.py")
 print("Hello")
-print("World")
-print(1+2)
