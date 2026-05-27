@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser(description='Your application description')
 # simple argument (mandatory)
 parser.add_argument('a', help='some description')
 # cast positional argument to int
-parser.add_argument('b', type=int, help='some description')
+
 # option (optional)
 parser.add_argument('-r', help='some description')
 # set silent=True if this option available
