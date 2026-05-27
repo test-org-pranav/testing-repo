@@ -17,16 +17,7 @@ Prerequisites on Ubuntu:
 # import matplotlib.pyplot as plt
 # from fuzzywuzzy import fuzz
 
-DIR_DATABASE = 'music/full'
-DIR_SAMPLES = 'music/partial'
 
-def get_fingerprint(filepath):
-    """
-    Get fingerprint (list of signed integer), version, duration
-    """
-    duration, fp_encoded = acoustid.fingerprint_file(filepath)
-    fp, version = chromaprint.decode_fingerprint(fp_encoded)
-    return fp, version, duration
 
 
 def build_fingerprint_database(dirpath, file_ext='.mp3'):
