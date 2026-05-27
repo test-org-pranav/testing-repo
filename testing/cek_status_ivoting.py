@@ -40,14 +40,14 @@ with open(input_file) as f:
 print('Memutakhirkan status...')
 with open(input_file, 'w') as f:
     writer = csv.writer(f)
-    for row in input_rows:
-        nama, jurusan, angkatan = row
-        try:
-            res = requests.get(url_template.format(nama, jurusan, angkatan), headers=headers)
-            body = res.json()
-            status = body['data'][0]['verificationStatus']
-        except Exception as e:
-            status = str(e)
-        finally:
-            writer.writerow((nama, jurusan, angkatan, status))
-            print(f'{nama}| {jurusan} | {angkatan} | {status}')
+    # for row in input_rows:
+    #     nama, jurusan, angkatan = row
+    #     try:
+    #         res = requests.get(url_template.format(nama, jurusan, angkatan), headers=headers)
+    #         body = res.json()
+    #         status = body['data'][0]['verificationStatus']
+    #     except Exception as e:
+    #         status = str(e)
+    #     finally:
+    #         writer.writerow((nama, jurusan, angkatan, status))
+    #         print(f'{nama}| {jurusan} | {angkatan} | {status}')
