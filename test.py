@@ -9,4 +9,10 @@ print("hello , adding this line now , again ")
 #####
 print("this is what i am typing now")
 printe("added this line now ")
+####
+num=0
+for num in range(10):
+  print(num)
+  num+=1
+
 
