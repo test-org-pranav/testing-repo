@@ -24,3 +24,8 @@ for f in os.listdir(dir):
     if ext == '.jpg':
         new_name = basename.split('_')[0].lower() + ext
         os.rename(os.path.join(dir, f), os.path.join(dir, new_name))
+
+
+
+########
+this is what i am adding now , please look 
